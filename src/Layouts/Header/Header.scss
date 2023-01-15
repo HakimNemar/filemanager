@@ -1,0 +1,27 @@
+header {
+    background-color: #fff;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $secondary;
+
+    .search-bar {
+        position: relative;
+
+        svg {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 25px;
+            margin: auto;
+        }
+
+        input {
+            border: 1px solid #cfdded;
+            border-radius: 25px;
+            padding: 12px 70px;
+            font-size: 14px;
+            width: 500px;
+        }
+    }
+}

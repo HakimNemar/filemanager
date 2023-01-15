@@ -1,0 +1,36 @@
+$breakpoints: (
+    mobileS: 320px,
+    mobileM: 375px,
+    mobileL: 425px,
+    mobileXL: 508px,
+    tablet: 768px,
+    laptop: 1024px,
+    laptopM: 1195px,
+    laptopL: 1350px,
+    laptopXL: 1440px,
+    desktop: 1600px,
+);
+
+@mixin media($point) {
+    $mobileS: "(max-width: 320px)";
+    $mobileM: "(max-width: 375px)";
+    $mobileL: "(max-width: 600px)";
+    $mobileXL: "(max-width: 600px)";
+    $tablet: "(max-width: 768px)";
+    $laptop: "(max-width: 1350px)";
+    $desktop: "(max-width: 1440px)";
+
+    @if $point == "mobile" {
+        @media #{$mobile} {
+            @content;
+        }
+    } @else if $point == "tablet" {
+        @media #{$tablet} {
+            @content;
+        }
+    } @else if $point == "desktop" {
+        @media #{$desktop} {
+            @content;
+        }
+    }
+}

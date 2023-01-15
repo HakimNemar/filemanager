@@ -1,0 +1,35 @@
+.main-menu {
+    div {
+        display: grid;
+    }
+
+    a {
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+
+        &:not(.active) {
+            &:hover {
+                color: $tertiaire;
+
+                svg {
+                    path {
+                        stroke: $tertiaire;
+                    }
+                }
+            }
+        }
+    }
+
+    .active {
+        background-color: $tertiaire;
+        color: #fff;
+
+        svg {
+            path {
+                stroke: #fff;
+            }
+        }
+    }
+}
