@@ -15,7 +15,7 @@ export default function MainMenu() {
                     <span>File manager</span>
                 </Link>
                 <Link to="/project" className={toogleActive === "project" ? "active" : ""} onClick={() => { setToogleActive("project") }}>
-                    {Icons.project}
+                    {Icons.grid}
                     <span>Project</span>
                 </Link>
             </div>

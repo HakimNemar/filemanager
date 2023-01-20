@@ -7,6 +7,7 @@ import { ReactComponent as Soleil } from "../Assets/Icon/Soleil.svg";
 import { ReactComponent as Lune } from "../Assets/Icon/Lune.svg";
 import { ReactComponent as Cloche } from "../Assets/Icon/Cloche.svg";
 import { ReactComponent as Search } from "../Assets/Icon/Search.svg";
+import { ReactComponent as Grid } from "../Assets/Icon/Grid.svg";
 
 const Icons = {
     document: <Document />,
@@ -17,7 +18,8 @@ const Icons = {
     soleil: <Soleil />,
     lune: <Lune />,
     cloche: <Cloche />,
-    search: <Search />
+    search: <Search />,
+    grid: <Grid />
 }
 
 export default Icons;

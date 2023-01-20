@@ -1,0 +1,40 @@
+.modal {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 30px 0px rgba($grey, 0.1);
+    padding: 0 50px;
+    border-radius: 10px;
+    top: 70px;
+    text-align: center;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s, padding 0.5s;
+
+    h3,
+    p {
+        font-family: Compass;
+        font-weight: 400;
+        letter-spacing: normal;
+        margin: 0;
+    }
+
+    p {
+        color: $greyLight;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .drag-and-drop {
+        border-radius: 10px;
+        background-color: rgba(#a7cdff, 0.2);
+        padding: 30px 50px;
+        margin-top: 30px;
+        border: 1px dashed #bacdf3;
+    }
+
+    .dragging {
+        background-color: rgba(#a7cdff, 0.3);
+    }
+
+    @import "./Uploaded.scss";
+}

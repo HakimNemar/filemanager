@@ -1,0 +1,76 @@
+.dark-mode {
+    background-color: $secondaryDark;
+    color: #fff;
+
+    .menu {
+        background-color: $primaryDark;
+        color: $greyLight;
+
+        .logo h2 {
+            color: #fff;
+        }
+    }
+
+    header {
+        background-color: $primaryDark;
+        border: 1px solid $secondaryDark;
+
+        .search-bar {
+            input {
+                background-color: $secondaryDark;
+                border: 1px solid $greyLight;
+                color: #fff;
+            }
+        }
+
+        svg {
+            path {
+                stroke: $greyLight;
+            }
+        }
+
+        .panel {
+            color: $greyLight;
+
+            .notification svg {
+                border: 1px solid $greyLight;
+            }
+        }
+    }
+
+    section {
+        background-color: #000;
+    }
+
+    .file-content {
+        ul li {
+            &:not(:last-child) {
+                border-bottom: 1px solid $greyLight;
+            }
+
+            &:first-child {
+                border-bottom: 1px solid $greyLight;
+                border-top: 1px solid $greyLight;
+            }
+        }
+
+        .head .panel {
+            select,
+            input {
+                color: #fff;
+                background-color: $secondaryDark;
+            }
+            .modal {
+                background-color: $secondaryDark;
+            }
+        }
+    }
+}
+
+.light-mode {
+    background-color: $secondary;
+
+    .menu {
+        background-color: $primary;
+    }
+}

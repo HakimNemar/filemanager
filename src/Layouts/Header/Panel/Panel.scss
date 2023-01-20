@@ -1,0 +1,44 @@
+.panel {
+    align-self: center;
+    display: flex;
+
+    .notification {
+        margin-right: 30px;
+
+        svg {
+            padding: 8px;
+            border: 1px solid #cfdded;
+            border-radius: 50%;
+        }
+    }
+
+    .informations {
+        display: flex;
+        height: fit-content;
+        position: relative;
+
+        img {
+            width: 41px;
+            height: 41px;
+            border-radius: 50%;
+        }
+
+        h4 {
+            margin: auto 40px auto 15px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-right: 2px solid $grey;
+            border-bottom: 2px solid $grey;
+            right: 0;
+            top: 0;
+            bottom: 8px;
+            margin: auto;
+            transform: rotate(45deg);
+        }
+    }
+}

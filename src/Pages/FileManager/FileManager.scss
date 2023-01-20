@@ -1,3 +1,37 @@
 .file-content {
-    padding: 40px;
+    margin: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 14px;
+
+    .head {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        .panel {
+            display: flex;
+            position: relative;
+
+            select,
+            input {
+                width: 160px;
+                height: 30px;
+                margin: auto 0 auto 20px;
+                border: 1px solid #bacdf3;
+                border-radius: 5px;
+                outline: none;
+                background-color: transparent;
+                text-align: center;
+            }
+
+            select {
+                padding: 0 20px;
+            }
+
+            @import "./Modal/Modal.scss";
+        }
+    }
+
+    @import "./ListOfFiles/ListOfFile.scss";
 }

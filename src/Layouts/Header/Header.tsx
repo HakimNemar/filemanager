@@ -1,16 +1,14 @@
-import Icons from "../../Components/Icon";
+import Panel from "./Panel/Panel";
+import SearchBar from "./SearchBar/SearchBar";
 
 export default function Header() {
     return (
         <header>
-            <div className="search-bar">
-                {Icons.search}
-                <input type="search" name="search" id="search" placeholder="Search something here" />
-            </div>
-            <div>
-                {Icons.cloche}
 
-            </div>
+            <SearchBar />
+
+            <Panel />
+
         </header>
     )
 }
